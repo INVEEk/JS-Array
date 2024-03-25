@@ -124,3 +124,47 @@ function getAgeDifference(people) {
 }
 
 console.log(getAgeDifference(peopleArray));
+
+/*
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+ */
+
+function positiveSum(arr) {
+    let index = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            index += arr[i];
+        }
+    }
+    return index;
+}
+
+/*
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9.
+ */
+
+function squareSum(numbers) {
+    var index = 0;
+    for (i = 0; i < numbers.length ; i++) {
+        index += Math.pow(numbers[i], 2);
+    }
+    return index;
+}
+
+/*
+Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+The output should be two capital letters with a dot separating them.
+ */
+
+function abbrevName(name){
+
+    // code away
+
+}
