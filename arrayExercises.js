@@ -227,3 +227,24 @@ https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
 function invert(array) {
     return array.map((numberFromArray) => numberFromArray* -1); // array.map is used in Sample Test, so my result based on it
 }
+
+/*
+Beginner - Lost Without a Map, Given an array of integers, return a new array with each value doubled.
+ */
+
+function maps(coordinates){
+    return coordinates.map((numbers) => numbers * 2);
+}
+
+/*
+Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+After your function finds the needle it should return a message (as a string) that says:
+
+"found the needle at position " plus the index it found the needle, so:
+ */
+
+function findNeedle(haystack) {
+    let isNeedleFoundAt = haystack.indexOf("needle");
+    return `found the needle at position ${isNeedleFoundAt}`;
+}
