@@ -220,4 +220,10 @@ function sum(numbers) {
 
 console.log(sum([1,2]));
 
-
+/*
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad/train/javascript
+ */
+function invert(array) {
+    return array.map((numberFromArray) => numberFromArray* -1); // array.map is used in Sample Test, so my result based on it
+}
