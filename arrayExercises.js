@@ -158,13 +158,66 @@ function squareSum(numbers) {
 }
 
 /*
-Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is // too young to just appreciate the full number, he has to start counting them from 1.
+As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and   // including that number, but excluding zero.
 
-The output should be two capital letters with a dot separating them.
+For example, if n = 10:
+return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+*/
+
+function monkeyCount(monkeysNumber) {
+    let numberOfMonkeys = [];
+    for (i = 1; i <= monkeysNumber; i++) {
+        numberOfMonkeys.push(i);
+    }
+    return numberOfMonkeys;
+}
+
+/*
+It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+Return the average of the given array rounded down to its nearest integer.
+The array will never be empty.
  */
 
-function abbrevName(name){
-
-    // code away
-
+function getAverage(marks){
+    let studentMarks = 0;
+    for (i = 0; i < marks.length; ++i){
+        studentMarks += marks[i];
+    }
+    let averageStudentMarks = studentMarks/marks.length;
+    return Math.floor(averageStudentMarks);
 }
+
+/*
+If you can't sleep, just count sheep!!
+Task:
+Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...".
+Input will always be valid, i.e. no negative integer
+ */
+
+const countSheep = function (num) {
+    let countedSheeps = "";
+    for (i = 1; i <= num; ++i) {
+        countedSheeps += i.toString() + ' sheep...';
+    }
+    return countedSheeps;
+}
+
+/*
+https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/javascript
+ */
+// Sum Numbers
+function sum(numbers) {
+    if (numbers.length === []) {
+        return 0;
+    }
+    let summedNumber = 0;
+    for (i = 0; i < numbers.length; ++i) {
+        summedNumber += numbers[i];
+    }
+    return summedNumber;
+}
+
+console.log(sum([1,2]));
+
+
