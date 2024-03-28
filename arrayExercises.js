@@ -17,8 +17,13 @@ Write the getSmallestNumber function.
 Write two versions of the above function: one using a for  loop and one using the sort  function
  */
 function getSmallestNumber(arrayOfNumbers) {
-    const sortedArray = arrayOfNumbers.sort();
-    return sortedArray[0];
+    let smallestNumber = arrayOfNumbers[0];
+    for (let i = 1; i < arrayOfNumbers.length; i++) {
+        if (smallestNumber > arrayOfNumbers[i]) {
+            smallestNumber = arrayOfNumbers[i];
+        }
+    }
+    return smallestNumber;
 }
 
 console.log(getSmallestNumber([2, -5, 10, 1, 4])); // -5
